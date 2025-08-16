@@ -348,12 +348,12 @@ const HeroSection = () => {
               className="flex items-center justify-center lg:justify-start space-x-6 mt-8"
             >
               <div className="flex -space-x-2">
-                {[1, 2, 3, 4].map((i) => (
+               {["BS", "SD", "AR", "DS"].map((letter, i) => (
                   <div
                     key={i}
                     className="w-10 h-10 rounded-full border-2 border-white dark:border-gray-800 bg-gradient-to-r from-blue-400 to-blue-500 flex items-center justify-center text-white text-sm font-semibold"
                   >
-                    {String.fromCharCode(64 + i)}
+                    {letter}
                   </div>
                 ))}
               </div>
